@@ -1,0 +1,3 @@
+from .bert_classifier import build_model
+
+__all__ = ["build_model"]
