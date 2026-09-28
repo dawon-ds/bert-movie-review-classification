@@ -1,3 +1,3 @@
-from .data import load_dataset_file
+from .data import load_mr_splits
 
-__all__ = ["load_dataset_file"]
+__all__ = ["load_mr_splits"]
