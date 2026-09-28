@@ -1,0 +1,18 @@
+seed: 42
+
+data:
+  dataset: mr
+  max_length: 128
+
+model:
+  name: bert-base-uncased
+  num_labels: 2
+
+training:
+  batch_size: 8
+  learning_rate: 3.0e-5
+  epochs: 4
+  warmup_ratio: 0.1
+
+output:
+  dir: runs/bert_mr
