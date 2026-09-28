@@ -1,5 +1,6 @@
 torch
 transformers
-scikit-learn
+datasets
+numpy
 PyYAML
-tqdm
+accelerate
