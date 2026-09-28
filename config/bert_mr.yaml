@@ -1,8 +1,10 @@
 seed: 42
 
 data:
-  dataset: mr
-  max_length: 128
+  train_file: data/mr_train.csv
+  val_file: data/mr_dev.csv
+  test_file: data/mr_test.csv
+  max_seq_length: 128
 
 model:
   name: bert-base-uncased
