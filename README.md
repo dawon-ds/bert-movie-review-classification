@@ -58,7 +58,7 @@ The CSV loader creates separate training, validation, and test datasets. Reviews
 
 The default configuration corresponds to Setting #2. To run Setting #1, change learning rate to `5e-5` and epochs to `3`, and use a separate output directory.
 
-Prepare CSV files at `data/mr_train.csv`, `data/mr_dev.csv`, and `data/mr_test.csv`. The training code expects a `sentence` column and numeric sentiment labels compatible with the model.
+Prepare CSV files at `data/mr_train.csv`, `data/mr_dev.csv`, and `data/mr_test.csv`. The CSV files must include `sentence` and `label` columns, with integer labels 0 or 1. Keep the same positive/negative label mapping across all three splits.
 
 Model and tokenizer files are saved under `runs/bert_mr/final/`. Use this directory as the checkpoint path for the evaluation and prediction commands.
 
