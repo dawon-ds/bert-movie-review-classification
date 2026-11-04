@@ -2,7 +2,6 @@
 
 Fine-tuned a pre-trained BERT model for binary sentiment classification on movie reviews.
 
-[Portfolio](https://incredible-march-0ef.notion.site/Movie-Review-Sentiment-Classification-with-BERT-3e968564df5a81a5ab3ff6a24f630d65)
 
 ## Project Overview
 
