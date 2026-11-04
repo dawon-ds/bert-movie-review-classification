@@ -74,3 +74,10 @@ The current training script saves the final model rather than automatically rest
 ## Review
 
 The project provided experience with pretrained text-classification models, tokenization, dynamic padding, and configuration-based experiments. Future work could add repeated seeds, per-class metrics, error analysis, and documented runtime conditions.
+
+## Data and Third-party Resources
+
+- **Dataset:** the MR movie-review dataset files are supplied separately and are subject to the original dataset owner's usage terms.
+- **Model:** `bert-base-uncased` is downloaded from its publisher; consult the model card and licensing information.
+
+Dependency lists are in `requirements.txt`; unless versions are explicitly pinned there, they do not reproduce an exact historical software environment. No redistribution permission for third-party inputs is implied by this repository.
