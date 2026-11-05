@@ -1,5 +1,7 @@
 # Movie Review Sentiment Classification with BERT
 
+[Portfolio Page](https://app.notion.com/p/3e968564df5a81a5ab3ff6a24f630d65)
+
 Fine-tuned a pre-trained BERT model for binary sentiment classification on movie reviews.
 
 
