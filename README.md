@@ -2,7 +2,7 @@
 
 [Portfolio Page](https://app.notion.com/p/3e968564df5a81a5ab3ff6a24f630d65)
 
-Fine-tuned a pre-trained BERT model for binary sentiment classification on movie reviews.
+Fine-tuned `bert-base-uncased` on the MR (Movie Review) dataset for binary sentiment classification, comparing accuracy and training time across two learning-rate and epoch configurations.
 
 ## Project Overview
 
@@ -25,6 +25,11 @@ Prepare CSV files at `data/mr_train.csv`, `data/mr_dev.csv`, and `data/mr_test.c
 
 Model and tokenizer files are saved under `runs/bert_mr/final/`. Use this directory as the checkpoint path for the evaluation and prediction commands.
 
+## Key Findings
+
+- Setting #2 achieved **0.52 percentage points higher accuracy** than Setting #1.
+- Since both the learning rate and number of epochs were changed, the performance difference cannot be attributed to either hyperparameter alone.
+
 ## Results
 
 | Setting | Learning Rate | Epochs | Accuracy | Training Time |
@@ -32,7 +37,6 @@ Model and tokenizer files are saved under `runs/bert_mr/final/`. Use this direct
 | #1 | 5e-5 | 3 | 86.98% | 6.10 min |
 | #2 | 3e-5 | 4 | 87.50% | 290.8 min |
 
-Both learning rate and epoch count changed between settings; the training-time difference also cannot be explained without the original runtime environment records.
 
 ## Repository Structure
 
