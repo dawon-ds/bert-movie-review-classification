@@ -4,7 +4,6 @@
 
 Fine-tuned a pre-trained BERT model for binary sentiment classification on movie reviews.
 
-
 ## Project Overview
 
 - **Task:** Movie review sentiment classification
@@ -33,9 +32,7 @@ Model and tokenizer files are saved under `runs/bert_mr/final/`. Use this direct
 | #1 | 5e-5 | 3 | 86.98% | 6.10 min |
 | #2 | 3e-5 | 4 | 87.50% | 290.8 min |
 
-### Interpretation
-
-Setting #2 improves reported accuracy by **0.52 percentage points**. Both learning rate and epoch count change, so the comparison cannot isolate either factor. The large training-time difference cannot be attributed to those settings alone without hardware and runtime records.
+Both learning rate and epoch count changed between settings; the training-time difference also cannot be explained without the original runtime environment records.
 
 ## Repository Structure
 
@@ -71,10 +68,6 @@ python -m scripts.predict --checkpoint <checkpoint_path> --text "This movie was 
 ## Limitations
 
 The current training script saves the final model rather than automatically restoring the highest-validation-accuracy checkpoint.
-
-## Review
-
-The project provided experience with pretrained text-classification models, tokenization, dynamic padding, and configuration-based experiments. Future work could add repeated seeds, per-class metrics, error analysis, and documented runtime conditions.
 
 ## Data and Third-party Resources
 
